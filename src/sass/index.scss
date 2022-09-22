@@ -1,0 +1,24 @@
+@import "_variables.scss";
+@import "_cdn.scss";
+@import "_mixins.scss";
+@import "header.scss";
+@import "features.scss";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
