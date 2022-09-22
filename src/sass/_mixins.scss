@@ -115,3 +115,41 @@
     transform: scale(0.95);
   }
 }
+@mixin works__image-hover {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(255, 67, 67, 0.8);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .works__image-name {
+    left: 0%;
+    right: 0%;
+    top: 32.35%;
+    bottom: 50%;
+  }
+  .works__image-user {
+    left: 0%;
+    right: 0%;
+    top: 56.05%;
+    bottom: 37.77%;
+  }
+}
+@mixin works__image-active {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(185, 12, 12, 0.8);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

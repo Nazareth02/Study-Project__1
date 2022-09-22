@@ -3,6 +3,7 @@
 @import "_mixins.scss";
 @import "header.scss";
 @import "features.scss";
+@import "works.scss";
 * {
   margin: 0;
   padding: 0;
@@ -21,4 +22,9 @@ html {
   box-sizing: border-box;
   position: relative;
   z-index: 3;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
