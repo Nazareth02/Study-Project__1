@@ -1,6 +1,12 @@
 .works {
   position: relative;
   padding-top: 130px;
+  // .works__wrap
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   // .works__image
   &__image {
@@ -25,7 +31,7 @@
 .works__image-name {
   position: absolute;
   top: -1000000;
-  left: -1000000;
+  left: -1000;
   @include h4;
   color: #fff;
   text-transform: uppercase;
@@ -36,7 +42,7 @@
 .works__image-user {
   position: absolute;
   top: -10000000;
-  left: -1000000;
+  left: -1000;
   @include h5;
   color: #fff;
   text-align: center;
