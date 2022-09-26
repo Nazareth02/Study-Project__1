@@ -1,0 +1,106 @@
+.pre-footer {
+  padding: 70px 0;
+  color: #fff;
+  background: #353c65;
+  @media (max-width: 700px) {
+    padding: 50px 0;
+  }
+  // .pre-footer__wrap
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 700px) {
+      justify-content: space-around;
+    }
+  }
+
+  // .pre-footer__text-name
+
+  &__text-name {
+    @media (max-width: 700px) {
+      font-size: 0.9rem;
+    }
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_18px;
+    line-height: 21px;
+  }
+
+  // .pre-footer__text-current
+
+  &__text-current {
+    @media (max-width: 700px) {
+      font-size: 0.8rem;
+    }
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 29px;
+    @include h5;
+    max-width: 370px;
+    @media (max-width: 1000px) {
+      max-width: 300px;
+    }
+    @media (max-width: 900px) {
+      max-width: 250px;
+    }
+    @media (max-width: 750px) {
+      max-width: 200px;
+    }
+  }
+
+  // .pre-footer__text-icons
+
+  &__text-icons {
+    color: #c6cbcd;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 5px;
+    @media (max-width: 590px) {
+      margin-right: 10px;
+      margin-left: 15px;
+    }
+
+    .fa-facebook-f {
+      &:hover {
+        color: #c6cbcd;
+        border: 1px solid #c6cbcd;
+      }
+    }
+    .fa-twitter {
+      &:hover {
+        color: #c6cbcd;
+        border: 1px solid #c6cbcd;
+      }
+    }
+    .fa-linkedin {
+      margin-right: 0;
+      &:hover {
+        color: #c6cbcd;
+        border: 1px solid #c6cbcd;
+      }
+    }
+
+    & i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      border: 1px solid #c6cbcd;
+      color: #c6cbcd;
+      margin-right: 25px;
+
+      transition: 0.4s;
+      @media (max-width: 590px) {
+        width: 39px;
+        height: 39px;
+        font-size: 18px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
