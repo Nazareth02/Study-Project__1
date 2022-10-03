@@ -3,6 +3,12 @@
 @import "_mixins.scss";
 @import "header.scss";
 @import "features.scss";
+@import "works.scss";
+@import "team.scss";
+@import "swiper.scss";
+@import "start.scss";
+@import "prefooter.scss";
+@import "footer.scss";
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +18,7 @@
 }
 
 html {
+  font-family: "Cardo", serif;
   font-family: "Raleway", sans-serif;
 }
 .container {

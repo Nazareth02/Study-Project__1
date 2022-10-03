@@ -1,0 +1,74 @@
+.start {
+  padding-top: 14px;
+  padding-bottom: 100px;
+  // .start__title
+
+  &__title {
+    @media (max-width: 1000px) {
+      margin-top: -130px;
+    }
+    @media (max-width: 711px) {
+      margin-top: -180px;
+    }
+    @media (max-width: 620px) {
+      margin-top: -70px;
+    }
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: $_30px;
+    @media (max-width: 620px) {
+      font-size: $_24px;
+    }
+    line-height: 12px;
+    @media (max-width: 711px) {
+      line-height: 30px;
+    }
+    text-align: center;
+    color: #000000;
+  }
+
+  // .start__text
+
+  &__text {
+    margin-top: 30px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_18px;
+    @media (max-width: 620px) {
+      font-size: $_13px;
+    }
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  // .start__button
+  @include start__button-hover;
+  @include start__button-active;
+  &__button {
+    @media (max-width: 874px) {
+      width: 20rem;
+      height: 4rem;
+      font-size: 1.2rem;
+    }
+    @media (max-width: 500px) {
+      width: 18rem;
+      height: 3.5rem;
+      font-size: 1rem;
+    }
+    cursor: pointer;
+    width: $_369px;
+    height: $_77px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ff4343;
+    border: none;
+    transition: 0.18s;
+    display: block;
+    margin: 50px auto 0;
+    @include h4;
+  }
+}
