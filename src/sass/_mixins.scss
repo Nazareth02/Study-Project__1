@@ -71,6 +71,7 @@
     content: "";
     position: absolute;
     bottom: 0;
+    top: 56px;
     left: 50%;
     display: block;
     height: 3px;
@@ -126,6 +127,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    transition: 0.3s;
   }
   .works__image-name {
     left: 0%;
