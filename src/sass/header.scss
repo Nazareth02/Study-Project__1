@@ -1,6 +1,5 @@
 .site__header {
   position: relative;
-  padding-top: 42px;
   background-image: url(../all\ img/background/header-background.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -20,6 +19,7 @@
 }
 
 .header-wrap__first {
+  padding-top: 42px;
   display: flex;
   justify-content: space-between;
 }
@@ -42,11 +42,33 @@
     line-height: 25px;
   }
 }
-.header__nav {
-  @media (max-width: 660px) {
-    display: none;
+@media (max-width: 660px) {
+  .header__nav {
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: -1000;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.99;
+    transition: 0.6s;
+    background: #252b49;
   }
+}
+.header__nav {
   .nav-list {
+    @media (max-width: 660px) {
+      flex-direction: column;
+      padding-left: 30px;
+      padding-top: 50px;
+      font-size: 40px;
+      .nav-list__item {
+        margin-left: 0;
+        &__item a {
+        }
+      }
+    }
+
     display: flex;
     flex-direction: row;
     @include header__nav-hover;
@@ -74,7 +96,7 @@
     @include header-psevdo;
   }
   .header-wrap__second {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,7 +169,10 @@
 
 // burger
 .fa-bars {
+  z-index: 100;
+  cursor: pointer;
   color: #fff;
+  display: block;
   font-size: 32px;
   @media (max-width: 660px) {
     margin-top: -4px;

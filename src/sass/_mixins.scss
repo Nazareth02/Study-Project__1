@@ -167,3 +167,19 @@
     transform: scale(0.95);
   }
 }
+@mixin header-burger-menu {
+  .site__header {
+    background: #252b49;
+  }
+  .header__nav {
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.99;
+    transition: 0.6s;
+    background: #252b49;
+  }
+}
